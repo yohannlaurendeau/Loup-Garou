@@ -1,19 +1,31 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to LOUP"/>
   </div>
 </template>
 
+
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import io from 'socket.io-client';
+
 
 export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data(){
+    return {
+      socket: io('http://localhost:3000')
+    }
+  },
+  mounted(){
+    this.socket.emit('test', 'oui')
   }
 }
+
 </script>
 
 <style>
