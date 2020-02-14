@@ -1,24 +1,29 @@
-# loup-garou
+# Loup Garou de Thiercelieux par Yohann Laurendeau et Alexandre Reita
 
-## Project setup
+## Description
+
+Ce projet consiste à recréer le jeu du loup garou de thiercelieux en version local.
+En gros, chaque joueur pourra se connecter au serveur qui fera le maitre du jeu.
+Ce projet est développé en Vue.js
+
+## Comment lancer l'application ?
+
+On installe les packages avec :
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+On lance le serveur avec : 
+```
+node index.js
+```
+
+On lance le client avec :
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### TODO
 
-### Lints and fixes files
-```
-npm run lint
-```
+- [] Mettre en place le principe du jeu
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
