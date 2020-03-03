@@ -2,19 +2,24 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to LOUP"/>
+    <Mechanic :socket="socket" />
   </div>
 </template>
 
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Mechanic from './components/Mechanic.vue'
+
+
 import io from 'socket.io-client';
 
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Mechanic
   },
   data(){
     return {
